@@ -1,7 +1,5 @@
 import Image from 'next/image'
 
-import './globals.css'
-
 export default function Home() {
   return (
     <>
@@ -13,7 +11,12 @@ export default function Home() {
           width={150}
           height={100}
         />
-        <div className="h-[164px] w-[164px]">
+        <a
+          className="h-[164px] w-[164px] no-underline"
+          href="https://portifolio-filipe-bacof.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="border-gradient-border h-[164px] w-[164px] animate-enter items-center justify-center rounded-full bg-gradient-background transition-transform duration-300 hover:scale-110">
             <Image
               className="rounded-full pl-1 pt-1"
@@ -23,59 +26,49 @@ export default function Home() {
               height={160}
             />
           </div>
-        </div>
-        <p className="animate-enter text-center text-[24px] md:text-[32px]">
+        </a>
+        <p className="animate-enter cursor-default text-center text-[24px] md:text-[32px]">
           Cápsula do tempo de
           <br />
           <strong>Filipe Bacof</strong>
         </p>
-        <span className="animate-enter text-[14px] text-gray-200 md:text-[12px]">
+        <span className="animate-enter cursor-default text-[14px] text-gray-200 md:text-[12px]">
           Realizado no dia 06/06/2023
         </span>
       </aside>
 
       <nav className="p-[22px] md:overflow-y-scroll md:p-16">
-        <a
-          className="mb-16 flex flex-col gap-4 no-underline"
-          href="https://portifolio-filipe-bacof.vercel.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <small className="text-[14px] text-gray-100 md:text-xs">
-            19 de Agosto de 2022
+        <div className="mb-16 flex flex-col gap-4">
+          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
+            11 de Janeiro de 2021
           </small>
-          <h1 className="text-xl text-gray-50 md:text-2xl">
-            Anubis no seu primeiro dia conosco
+          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
+            Meu Primeiro SSD
           </h1>
           <div className="h-[280px] w-full overflow-hidden rounded-lg">
             <Image
               className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
-              src="/19-08-2022.jpg"
-              alt="Dieli segurando o Anubis"
+              src="/11-01-2021.jpg"
+              alt="Primeiro SSD que eu coloquei no meu notebook"
               height={280}
               width={1000}
               layout="responsive"
             />
           </div>
-          <p className="text-md text-gray-100 md:text-lg">
-            Neste dia, Dieli e eu fomos adotar nosso gato. Ele estava
-            extremamente assustado inicialmente, mas não demorou muito para que
-            ele começasse a explorar a casa e encontrar seu lugar favorito: a
-            janela, de onde ele podia observar os pássaros e os gatos dos
-            vizinhos.
+          <p className="text-md cursor-default text-gray-100 md:text-lg">
+            Eu mesmo fiz a troca do meu primeiro SSD. Instalei um Kingston de
+            120 GB, mas atualmente estou utilizando um SSD do tipo M.2 com
+            capacidade de 480 GB. Essa atualização me permitiu liberar slot do
+            disco rígido. Além disso, adicionei um HD de 1 TB para garantir
+            ainda mais espaço disponível.
           </p>
-        </a>
+        </div>
 
-        <a
-          className="mb-16 flex flex-col gap-4 no-underline"
-          href="https://portifolio-filipe-bacof.vercel.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <small className="text-[14px] text-gray-100 md:text-xs">
+        <div className="mb-16 flex flex-col gap-4">
+          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
             25 de Março de 2022
           </small>
-          <h1 className="text-xl text-gray-50 md:text-2xl">
+          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
             Bacof e Mahl no Mendes Pub
           </h1>
           <div className="h-[280px] w-full overflow-hidden rounded-lg">
@@ -88,14 +81,95 @@ export default function Home() {
               layout="responsive"
             />
           </div>
-          <p className="text-md text-gray-100 md:text-lg">
+          <p className="text-md cursor-default text-gray-100 md:text-lg">
             Foi um imenso prazer desenvolver uma amizade com essa pessoa
             especial. As risadas e as conversas que compartilhamos foram
             inesquecíveis. Além de ser um ótimo amigo, também é um programador
-            excepcional. Espero beber contigo no bar que há lá do outro lado.
-            {/* <a href="https://youtu.be/cePCgZvLETQ?t=75"> </a> */}
+            excepcional.&nbsp;
+            <a
+              href="https://youtu.be/cePCgZvLETQ?t=75"
+              className="cursor-pointer underline"
+            >
+              Espero beber contigo no bar que há lá do outro lado.
+            </a>
           </p>
-        </a>
+        </div>
+
+        <div className="mb-16 flex flex-col gap-4">
+          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
+            19 de Agosto de 2022
+          </small>
+          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
+            Anubis no seu primeiro dia conosco
+          </h1>
+          <div className="h-[280px] w-full overflow-hidden rounded-lg">
+            <Image
+              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
+              src="/19-08-2022.jpg"
+              alt="Dieli segurando o Anubis"
+              height={280}
+              width={1000}
+              layout="responsive"
+            />
+          </div>
+          <p className="text-md cursor-default text-gray-100 md:text-lg">
+            Neste dia, Dieli e eu fomos adotar nosso gato. Ele estava
+            extremamente assustado inicialmente, mas não demorou muito para que
+            ele começasse a explorar a casa e encontrar seu lugar favorito: a
+            janela, de onde ele podia observar os pássaros e os gatos dos
+            vizinhos.
+          </p>
+        </div>
+
+        <div className="mb-16 flex flex-col gap-4">
+          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
+            12 de Dezembro de 2017
+          </small>
+          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
+            Instrumentos musicais antigos
+          </h1>
+          <div className="h-[280px] w-full overflow-hidden rounded-lg">
+            <Image
+              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
+              src="/12-12-2017.jpg"
+              alt="Eu junto com meus instrumentos antigos"
+              height={280}
+              width={1000}
+              layout="responsive"
+            />
+          </div>
+          <p className="text-md cursor-default text-gray-100 md:text-lg">
+            Eu tive vários instrumentos musicais ao longo da minha vida, mas
+            nunca me apeguei muito a eles. No entanto, gosto de olhar essa foto
+            e lembrar como eu tinha facilidade em aprender diferentes
+            instrumentos de corda.
+          </p>
+        </div>
+
+        <div className="mb-16 flex flex-col gap-4">
+          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
+            10 de Janeiro de 2022
+          </small>
+          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
+            Na praia em família
+          </h1>
+          <div className="h-[280px] w-full overflow-hidden rounded-lg">
+            <Image
+              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
+              src="/10-01-2022.jpg"
+              alt="Primeiro SSD que eu coloquei no meu notebook"
+              height={280}
+              width={1000}
+              layout="responsive"
+            />
+          </div>
+          <p className="text-md cursor-default text-gray-100 md:text-lg">
+            No meu aniversário de 24 anos, fui para a praia com meu pai, tios e
+            primos. Foi uma experiência muito divertida passar o dia à
+            beira-mar, mesmo que não tenhamos pescado nada. Guardo ótimas
+            lembranças desse momento especial.
+          </p>
+        </div>
       </nav>
     </>
   )

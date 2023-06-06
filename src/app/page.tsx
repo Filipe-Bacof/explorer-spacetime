@@ -14,8 +14,8 @@ export default function Home() {
         <div className="border-gradient-border h-[164px] w-[164px] items-center justify-center rounded-full bg-gradient-background">
           <Image
             className="rounded-full pl-1 pt-1"
-            src="/profile.png"
-            alt="Logo do NLW Spacetime"
+            src="/profile.jpg"
+            alt="minha foto de perfil"
             width={160}
             height={160}
           />

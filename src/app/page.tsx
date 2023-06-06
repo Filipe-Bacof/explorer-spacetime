@@ -1,19 +1,23 @@
 import Image from 'next/image'
-import Logo from '../../public/logo.svg'
-import FotoGithub from '../../public/profile.png'
-import DieliComGato from '../../public/19-08-2022.jpg'
-import BebendoComRafa from '../../public/25-03-2022.jpg'
 
 export default function Home() {
   return (
     <>
       <aside className="flex flex-col items-center justify-center gap-5 border-r border-r-gray-500 bg-stars bg-auto bg-right-top bg-no-repeat">
-        <Image className="" src={Logo} alt="Logo do NLW Spacetime" />
+        <Image
+          className=""
+          src="/logo.svg"
+          alt="Logo do NLW Spacetime"
+          width={150}
+          height={100}
+        />
         <div className="border-gradient-border h-[164px] w-[164px] items-center justify-center rounded-full bg-gradient-background">
           <Image
-            className=" h-[160px] w-[160px] rounded-full pl-1 pt-1"
-            src={FotoGithub}
+            className="rounded-full pl-1 pt-1"
+            src="/profile.png"
             alt="Logo do NLW Spacetime"
+            width={160}
+            height={160}
           />
         </div>
         <p className="text-center text-[32px]">
@@ -37,9 +41,12 @@ export default function Home() {
             Anubis no seu primeiro dia conosco
           </h1>
           <Image
-            className="h-[280px] w-full rounded-lg object-cover"
-            src={DieliComGato}
+            className="rounded-lg object-cover"
+            src="/19-08-2022.jpg"
             alt="Dieli segurando o Anubis"
+            height={280}
+            width={1000}
+            layout="responsive"
           />
           <p className="text-lg text-gray-100">
             Neste dia, Dieli e eu fomos adotar nosso gato. Ele estava
@@ -59,9 +66,12 @@ export default function Home() {
           <small className="text-xs text-gray-100">25 de Março de 2022</small>
           <h1 className="text-2xl text-gray-50">Bacof e Mahl no Mendes Pub</h1>
           <Image
-            className="h-[280px] w-full rounded-lg object-cover"
-            src={BebendoComRafa}
+            className=" rounded-lg object-cover"
+            src="/25-03-2022.jpg"
             alt="Eu e o Rafael brindando um chopp"
+            height={280}
+            width={1000}
+            layout="responsive"
           />
           <p className="text-lg text-gray-100">
             Foi um imenso prazer desenvolver uma amizade com essa pessoa

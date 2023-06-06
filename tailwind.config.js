@@ -73,8 +73,8 @@ module.exports = {
         },
       },
       backgroundImage: {
-        stripes:
-          'linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 12.5%, transparent 12.5%, transparent)',
+        stars: "url('/background.svg')",
+        'gradient-background': 'linear-gradient(#D39E33, #ED5636, #633BBC)',
       },
       fontSize: {
         '5xl': '2.5rem',
@@ -84,6 +84,9 @@ module.exports = {
       },
       blur: {
         full: '194px',
+      },
+      borderImage: {
+        'gradient-border': 'linear-gradient(180deg, #D39E33, #ED5636, #633BBC)',
       },
     },
   },

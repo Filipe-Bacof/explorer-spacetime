@@ -88,6 +88,15 @@ module.exports = {
       borderImage: {
         'gradient-border': 'linear-gradient(180deg, #D39E33, #ED5636, #633BBC)',
       },
+      keyframes: {
+        entering: {
+          '0%': { opacity: 0, transform: 'translateY(-200px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        enter: 'entering 0.7s ease-in-out',
+      },
     },
   },
 }

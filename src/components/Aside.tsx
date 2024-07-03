@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-export default function Aside() {
+type AsideProps = {
+  date: string;
+};
+
+export default function Aside({ date }: AsideProps) {
   return (
     <aside className="flex flex-col items-center justify-center gap-5 bg-stars bg-auto bg-right-top bg-no-repeat px-3 py-8 md:border-r md:border-r-gray-500">
       <Image
@@ -32,7 +36,7 @@ export default function Aside() {
         <strong>Filipe Bacof</strong>
       </p>
       <span className="animate-enter cursor-default text-[14px] text-gray-200 md:text-[12px]">
-        Realizado no dia 06/06/2023
+        Realizado no dia {date}
       </span>
     </aside>
   );

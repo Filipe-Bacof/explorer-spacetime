@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Aside />
+      <Aside date="06/06/2023" />
 
       <nav className="p-[22px] md:overflow-y-scroll md:p-16">
         <div className="mb-16 flex flex-col gap-4">

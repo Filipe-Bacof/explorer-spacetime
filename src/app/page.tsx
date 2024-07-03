@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <>
-      <Aside />
+      <Aside date="03/07/2024" />
 
       <nav className="p-[22px] md:overflow-y-scroll md:p-16">
         {Memories2023.map(({ date, title, src, alt, description }) => (

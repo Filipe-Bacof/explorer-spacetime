@@ -1,176 +1,75 @@
-import Image from 'next/image'
+import Aside from "@/components/Aside";
+import Memory from "@/components/Memory";
+import { Memory as MemoryInterface } from "@/interfaces/Memory.interface";
 
 export default function Home() {
+  const Memories2023: MemoryInterface[] = [
+    {
+      date: "12 de Junho de 2024",
+      title: "The Dev Conf 2024",
+      src: "/2023/12-06-2024.jpg",
+      alt: "Trocando as cordas do baixo no intervalo",
+      description:
+        "Durante o evento The Developers Conference, Rafael e eu estavamos muito empolgados tanto com o conteúdo de Blockchain e Web3, quanto com as cordas de baixo que trocamos para treinar um pouco no intervalo do evento, como é um evento presencial e também remoto e participamos apenas do remoto, esse foi o equivalente a fazer um networking hahaha",
+    },
+    {
+      date: "22 de Junho de 2024",
+      title: "Venom no seu primeiro dia conosco",
+      src: "/2023/22-06-2024.jpg",
+      alt: "Venom foi o nome para o nosso filhotinho adotado",
+      description:
+        "Anubis, nosso gato primogênito acabou de passar pela castração, e foi contemplando com um irmãozinho para dividir os brinquedos, comida, brincadeiras e o espaço super apertado de uma cama queen size, porém se acostumaram super rapido com a companhia um do outro, apesar do Anubis ter ficado super zangado no começo.",
+    },
+    {
+      date: "07 de Novembro de 2023",
+      title: "Finalização de projetos",
+      src: "/2023/07-11-2023.jpg",
+      alt: "Brindando Amstel após concluir projetos importantes",
+      description:
+        "Nossas iniciativas para nos tornarmos desenvolvedores mais competentes e ricos em conhecimento nos levou a criar alguns projetos juntos e compartilhar soluções, impulsionando a carreira de ambos, sou muito grato pela sua amizade!",
+    },
+    {
+      date: "17 de Março de 2023",
+      title: "Show da banda Big Eddie",
+      src: "/2023/17-03-2023.jpg",
+      alt: "Membros do BlackZone Reunidos para uma foto",
+      description:
+        "Neste dia fui prestigiar a banda Big Eddie, cover de Iron Maiden, do meu querido amigo Paulo Ruaro, foi o dia em que eu conheci o restante dos membros do grupo de amigos que conversava diariamente e também o momento que conheci O_CARA_DO_METAL, que substituiu o guitarrista da banda Sexta Feira 13 (cover de Black Sabbath) devido problemas internos.",
+    },
+    {
+      date: "31 de Outubro de 2023",
+      title: "JSON no Halloween",
+      src: "/2023/31-10-2023.jpg",
+      alt: "Máscara do Jason e a Camiseta do Javascript e ao lado eu Fantasiado de JSON, parodiando o filme Jason",
+      description:
+        "O que acontece quando um programador JavaScript gosta de filmes de terror? Ele cria uma fantasia que só outros programadores entendem. Java Script Object Notation assustando pessoas no dia das bruxas.",
+    },
+    {
+      date: "20 de Setembro de 2022",
+      title: "Costelão na Revolução Farroupilha",
+      src: "/2023/20-09-2022.jpg",
+      alt: "Fotos tiradas no evento familiar de 2022 para celebrar o 20 de setembro",
+      description:
+        "Que dia sensacional, além do ambiente familiar aconchegante, foi um prazer vestir uma pilcha pela primeira e única vez na vida até agora. Apesar de eu só ter posado para foto em frente a churrasqueira, créditos para o tio Cabeça que assou esse pedaço de tradição.",
+    },
+  ];
+
   return (
     <>
-      <aside className="flex flex-col items-center justify-center gap-5 bg-stars bg-auto bg-right-top bg-no-repeat px-3 py-8 md:border-r md:border-r-gray-500">
-        <Image
-          className="animate-enter"
-          src="/logo.svg"
-          alt="Logo do NLW Spacetime"
-          width={150}
-          height={100}
-        />
-        <a
-          className="h-[164px] w-[164px] no-underline"
-          href="https://portifolio-filipe-bacof.vercel.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="border-gradient-border h-[164px] w-[164px] animate-enter items-center justify-center rounded-full bg-gradient-background transition-transform duration-300 hover:scale-110">
-            <Image
-              className="rounded-full pl-1 pt-1"
-              src="/profile.jpg"
-              alt="minha foto de perfil"
-              width={160}
-              height={160}
-            />
-          </div>
-        </a>
-        <p className="animate-enter cursor-default text-center text-[24px] md:text-[32px]">
-          Cápsula do tempo de
-          <br />
-          <strong>Filipe Bacof</strong>
-        </p>
-        <span className="animate-enter cursor-default text-[14px] text-gray-200 md:text-[12px]">
-          Realizado no dia 06/06/2023
-        </span>
-      </aside>
+      <Aside />
 
       <nav className="p-[22px] md:overflow-y-scroll md:p-16">
-        <div className="mb-16 flex flex-col gap-4">
-          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
-            11 de Janeiro de 2021
-          </small>
-          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
-            Meu Primeiro SSD
-          </h1>
-          <div className="h-[280px] w-full overflow-hidden rounded-lg">
-            <Image
-              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
-              src="/11-01-2021.jpg"
-              alt="Primeiro SSD que eu coloquei no meu notebook"
-              height={280}
-              width={1000}
-              layout="responsive"
-            />
-          </div>
-          <p className="text-md cursor-default text-gray-100 md:text-lg">
-            Eu mesmo fiz a troca do meu primeiro SSD. Instalei um Kingston de
-            120 GB, mas atualmente estou utilizando um SSD do tipo M.2 com
-            capacidade de 480 GB. Essa atualização me permitiu liberar slot do
-            disco rígido. Além disso, adicionei um HD de 1 TB para garantir
-            ainda mais espaço disponível.
-          </p>
-        </div>
-
-        <div className="mb-16 flex flex-col gap-4">
-          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
-            25 de Março de 2022
-          </small>
-          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
-            Bacof e Mahl no Mendes Pub
-          </h1>
-          <div className="h-[280px] w-full overflow-hidden rounded-lg">
-            <Image
-              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
-              src="/25-03-2022.jpg"
-              alt="Eu e o Rafael brindando um chopp"
-              height={280}
-              width={1000}
-              layout="responsive"
-            />
-          </div>
-          <p className="text-md cursor-default text-gray-100 md:text-lg">
-            Foi um imenso prazer desenvolver uma amizade com essa pessoa
-            especial. As risadas e as conversas que compartilhamos foram
-            inesquecíveis. Além de ser um ótimo amigo, também é um programador
-            excepcional.&nbsp;
-            <a
-              href="https://youtu.be/cePCgZvLETQ?t=75"
-              className="cursor-pointer underline"
-            >
-              Espero beber contigo no bar que há lá do outro lado.
-            </a>
-          </p>
-        </div>
-
-        <div className="mb-16 flex flex-col gap-4">
-          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
-            19 de Agosto de 2022
-          </small>
-          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
-            Anubis no seu primeiro dia conosco
-          </h1>
-          <div className="h-[280px] w-full overflow-hidden rounded-lg">
-            <Image
-              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
-              src="/19-08-2022.jpg"
-              alt="Dieli segurando o Anubis"
-              height={280}
-              width={1000}
-              layout="responsive"
-            />
-          </div>
-          <p className="text-md cursor-default text-gray-100 md:text-lg">
-            Neste dia, Dieli e eu fomos adotar nosso gato. Ele estava
-            extremamente assustado inicialmente, mas não demorou muito para que
-            ele começasse a explorar a casa e encontrar seu lugar favorito: a
-            janela, de onde ele podia observar os pássaros e os gatos dos
-            vizinhos.
-          </p>
-        </div>
-
-        <div className="mb-16 flex flex-col gap-4">
-          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
-            12 de Dezembro de 2017
-          </small>
-          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
-            Instrumentos musicais antigos
-          </h1>
-          <div className="h-[280px] w-full overflow-hidden rounded-lg">
-            <Image
-              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
-              src="/12-12-2017.jpg"
-              alt="Eu junto com meus instrumentos antigos"
-              height={280}
-              width={1000}
-              layout="responsive"
-            />
-          </div>
-          <p className="text-md cursor-default text-gray-100 md:text-lg">
-            Eu tive vários instrumentos musicais ao longo da minha vida, mas
-            nunca me apeguei muito a eles. No entanto, gosto de olhar essa foto
-            e lembrar como eu tinha facilidade em aprender diferentes
-            instrumentos de corda.
-          </p>
-        </div>
-
-        <div className="mb-16 flex flex-col gap-4">
-          <small className="cursor-default text-[14px] text-gray-100 md:text-xs">
-            10 de Janeiro de 2022
-          </small>
-          <h1 className="cursor-default text-xl text-gray-50 md:text-2xl">
-            Na praia em família
-          </h1>
-          <div className="h-[280px] w-full overflow-hidden rounded-lg">
-            <Image
-              className="rounded-lg object-cover transition-transform duration-300 hover:scale-110"
-              src="/10-01-2022.jpg"
-              alt="Primeiro SSD que eu coloquei no meu notebook"
-              height={280}
-              width={1000}
-              layout="responsive"
-            />
-          </div>
-          <p className="text-md cursor-default text-gray-100 md:text-lg">
-            No meu aniversário de 24 anos, fui para a praia com meu pai, tios e
-            primos. Foi uma experiência muito divertida passar o dia à
-            beira-mar, mesmo que não tenhamos pescado nada. Guardo ótimas
-            lembranças desse momento especial.
-          </p>
-        </div>
+        {Memories2023.map(({ date, title, src, alt, description }) => (
+          <Memory
+            key={`${src}-${title}`}
+            date={date}
+            title={title}
+            src={src}
+            alt={alt}
+            description={description}
+          />
+        ))}
       </nav>
     </>
-  )
+  );
 }

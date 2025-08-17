@@ -5,58 +5,58 @@ import { Memory as MemoryInterface } from "@/interfaces/Memory.interface";
 export default function Home() {
   const Memories2023: MemoryInterface[] = [
     {
-      date: "12 de Junho de 2024",
-      title: "The Dev Conf 2024",
-      src: "/2023/12-06-2024.jpg",
-      alt: "Trocando as cordas do baixo no intervalo",
+      date: "29 de Março de 2025",
+      title: "Engenheiro de Software formado!",
+      src: "/2024/29-03-2025.jpg",
+      alt: "Foto com a família materna trajando uma toga",
       description:
-        "Durante o evento The Developers Conference, Rafael e eu estavamos muito empolgados tanto com o conteúdo de Blockchain e Web3, quanto com as cordas de baixo que trocamos para treinar um pouco no intervalo do evento, como é um evento presencial e também remoto e participamos apenas do remoto, esse foi o equivalente a fazer um networking hahaha",
+        "Depois de estudar arduamente para me tornar um engenheiro de software, comemorei minha conquista tirando algumas fotos para recordação desse momento único, depois de ter investido o preço de um corsa para pagar minha mensalidade, nada mais justo do que alugar uma toga para tirar fotos em família.",
     },
     {
-      date: "22 de Junho de 2024",
-      title: "Venom no seu primeiro dia conosco",
-      src: "/2023/22-06-2024.jpg",
-      alt: "Venom foi o nome para o nosso filhotinho adotado",
+      date: "22 de Fevereiro de 2025",
+      title: "Casamento no museu",
+      src: "/2024/22-02-2025.jpg",
+      alt: "Foto com os noivos",
       description:
-        "Anubis, nosso gato primogênito acabou de passar pela castração, e foi contemplando com um irmãozinho para dividir os brinquedos, comida, brincadeiras e o espaço super apertado de uma cama queen size, porém se acostumaram super rapido com a companhia um do outro, apesar do Anubis ter ficado super zangado no começo.",
+        "Que Deus abençoe o casamento dos nossos amigos José Mario Reisswitz e Juliana Siebert, ficamos muito felizes de ter participado desse momento tão especial para vocês.",
     },
     {
-      date: "07 de Novembro de 2023",
-      title: "Finalização de projetos",
-      src: "/2023/07-11-2023.jpg",
-      alt: "Brindando Amstel após concluir projetos importantes",
+      date: "13 de Dezembro de 2024",
+      title: "Festa da firma",
+      src: "/2024/13-12-2024.jpg",
+      alt: "Contraternização entre os colaboradores da PariPassu",
       description:
-        "Nossas iniciativas para nos tornarmos desenvolvedores mais competentes e ricos em conhecimento nos levou a criar alguns projetos juntos e compartilhar soluções, impulsionando a carreira de ambos, sou muito grato pela sua amizade!",
+        "Nessa semana eu estava em Florianópolis presencialmente para participar da festa de final de ano da PariPassu.",
     },
     {
-      date: "17 de Março de 2023",
-      title: "Show da banda Big Eddie",
-      src: "/2023/17-03-2023.jpg",
-      alt: "Membros do BlackZone Reunidos para uma foto",
+      date: "26 de Outubro de 2024",
+      title: "Aniversário Mohammed Edo",
+      src: "/2024/26-10-2024.jpg",
+      alt: "Amigos trajados profanamente",
       description:
-        "Neste dia fui prestigiar a banda Big Eddie, cover de Iron Maiden, do meu querido amigo Paulo Ruaro, foi o dia em que eu conheci o restante dos membros do grupo de amigos que conversava diariamente e também o momento que conheci O_CARA_DO_METAL, que substituiu o guitarrista da banda Sexta Feira 13 (cover de Black Sabbath) devido problemas internos.",
+        "Simplesmente a festa de aniversário mais divertida que já fui, temática árabe, sacrificamos o Paulo Ruaro como oferenda para o aniversariante Eduardo Serker.",
     },
     {
-      date: "31 de Outubro de 2023",
-      title: "JSON no Halloween",
-      src: "/2023/31-10-2023.jpg",
-      alt: "Máscara do Jason e a Camiseta do Javascript e ao lado eu Fantasiado de JSON, parodiando o filme Jason",
+      date: "01 de Janeiro de 2025",
+      title: "Virada do ano na casa nova do Rafael e Deia",
+      src: "/2024/01-01-2025.jpg",
+      alt: "Tomando alguns drinks entre amigos antes da meia noite",
       description:
-        "O que acontece quando um programador JavaScript gosta de filmes de terror? Ele cria uma fantasia que só outros programadores entendem. Java Script Object Notation assustando pessoas no dia das bruxas.",
+        "Pouco antes da meia noite, estávamos entre amigos nos divertindo e comendo alguns pratos gastronomicos exóticos.",
     },
     {
-      date: "20 de Setembro de 2022",
-      title: "Costelão na Revolução Farroupilha",
-      src: "/2023/20-09-2022.jpg",
-      alt: "Fotos tiradas no evento familiar de 2022 para celebrar o 20 de setembro",
+      date: "18 de Julho de 2024",
+      title: "Os guri são do rock",
+      src: "/2024/18-07-2024.jpg",
+      alt: "Bacof com a guitarra e Mahl com o baixo",
       description:
-        "Que dia sensacional, além do ambiente familiar aconchegante, foi um prazer vestir uma pilcha pela primeira e única vez na vida até agora. Apesar de eu só ter posado para foto em frente a churrasqueira, créditos para o tio Cabeça que assou esse pedaço de tradição.",
+        "Outra noite como muitas outras que fizemos, é sempre muito divertido quando nos reunimos para tocar e beber.",
     },
   ];
 
   return (
     <>
-      <Aside date="03/07/2024" />
+      <Aside date="16/08/2025" />
 
       <nav className="p-[22px] md:overflow-y-scroll md:p-16">
         {Memories2023.map(({ date, title, src, alt, description }) => (

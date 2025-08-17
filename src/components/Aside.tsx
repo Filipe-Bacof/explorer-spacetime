@@ -16,7 +16,7 @@ export default function Aside({ date }: AsideProps) {
       />
       <a
         className="h-[164px] w-[164px] no-underline"
-        href="https://portifolio-filipe-bacof.vercel.app/"
+        href="https://bacof.com.br"
         target="_blank"
         rel="noreferrer"
       >
